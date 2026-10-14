@@ -14,13 +14,13 @@ Paquete compartido para integrar el checkout y la API de confirmación de PayPho
 ## Instalación desde GitHub
 
 ```bash
-npm install git+https://github.com/ORGANIZACION/payphone-lib.git
+npm install git+https://github.com/JhonattanAron/payphone-lib.git
 ```
 
 Fija una versión estable al integrar en otros proyectos:
 
 ```bash
-npm install git+https://github.com/ORGANIZACION/payphone-lib.git#v1.0.0
+npm install git+https://github.com/JhonattanAron/payphone-lib.git#v1.0.0
 ```
 
 ## Variables de entorno
@@ -55,6 +55,12 @@ No marques un pago como aprobado únicamente porque el navegador envió un `tran
 - `examples`: ejemplos sin credenciales.
 - `docs/EXTRACTION-PLAN.md`: pasos para completar la separación de Invox.
 
+## Apóyame
+
+Si este proyecto te resulta útil, puedes seguirme en [Instagram](https://www.instagram.com/jhonattan_aron/).
+
 ## Seguridad
 
 Valida transacción e importe en el backend, prevén reintentos y duplicados, verifica origen de mensajes entre ventanas, no interpolar entrada del usuario sin escape dentro de HTML/JavaScript, y configura CSP/URLs permitidas según la documentación oficial.
+
+
