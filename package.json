@@ -1,18 +1,48 @@
 {
   "name": "@jhonattanaron/payphone-lib",
-  "version": "1.0.0",
-  "description": "PayPhone Button API server client and frontend checkout utilities",
+  "version": "1.1.0",
+  "description": "PayPhone Button Box server HTML and React checkout frame, plus API client",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": {"types": "./dist/index.d.ts", "import": "./dist/index.js"},
-    "./backend": {"types": "./dist/backend/client.d.ts", "import": "./dist/backend/client.js"},
-    "./frontend": {"types": "./dist/frontend/checkout.d.ts", "import": "./dist/frontend/checkout.js"}
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./backend": {
+      "types": "./dist/backend/client.d.ts",
+      "import": "./dist/backend/client.js"
+    },
+    "./payment-box": {
+      "types": "./dist/backend/payment-box.d.ts",
+      "import": "./dist/backend/payment-box.js"
+    },
+    "./frontend": {
+      "types": "./dist/frontend/checkout-frame.d.ts",
+      "import": "./dist/frontend/checkout-frame.js"
+    }
   },
-  "files": ["dist", "README.md", "LICENSE"],
-  "scripts": {"build": "tsc -p tsconfig.json", "prepare": "npm run build"},
-  "devDependencies": {"@types/node": "^22.0.0", "typescript": "^5.7.0"},
-  "engines": {"node": ">=20"}
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "react": "^19.0.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
 }
