@@ -1,0 +1,11 @@
+{
+  "name": "@YOUR_ORG/payphone-lib",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Reusable PayPhone checkout and server integration adapters for Node.js applications",
+  "license": "MIT",
+  "type": "module",
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {"build": "tsc -p tsconfig.json"},
+  "devDependencies": {"typescript": "^5.7.0"}
+}
